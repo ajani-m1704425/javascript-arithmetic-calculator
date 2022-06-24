@@ -1,73 +1,61 @@
 function Addition(){
     console.log("Addition of two number");
-    var First_Number = prompt("Enter the first number");
-    var Second_Number = prompt("Enter the second number");
+    var First_Number = Number(prompt("Enter the first number"));
+    var Second_Number = Number(prompt("Enter the second number"));
     var Adder = First_Number + Second_Number;
-    console.log("The addition of the two numbers is: ", Adder);
+    alert("The addition of the two numbers is: " + Adder);
 }
     
 
 
 function Subtraction(){
     console.log("Subtraction of two number");
-    var First_Number = prompt("Enter the first number:");
-    var Second_Number = prompt("Enter the second number:\n");
+    var First_Number = Number(prompt("Enter the first number:"));
+    var Second_Number = Number(prompt("Enter the second number:"));
     var subtract = First_Number - Second_Number;
-    console.log("The subtraction of the two numbers is: ", subtract);
+    alert("The subtraction of the two numbers is: " + subtract);
 }
     
 
 
 function Division(){
      console.log("Division of two number");
-    var dividen = prompt("Enter the dividen");
-    var divisor = prompt("Enter the divisor");
+    var dividen = Number(prompt("Enter the dividen"));
+    var divisor = Number(prompt("Enter the divisor"));
     var divide = dividen / divisor;
-    console.log("The division of the two numbers is: ", divide);
+    alert("The division of the two numbers is: "+ divide);
 }
    
 
 
 function Multiplication(){
     console.log("Multiplication of two number\n");
-    var First_Number = prompt("Enter the first number:\n");
-    var Second_Number = prompt("Enter the second number:\n");
+    var First_Number = Number(prompt("Enter the first number:\n"));
+    var Second_Number = Number(prompt("Enter the second number:\n"));
     var multiply = First_Number * Second_Number;
-    console.log("The multiplication of the two numbers is: ", multiply);
+    alert("The multiplication of the two numbers is: "+ multiply);
 }
     
-
-
-function Modulus(){
-     console.log("Modulus of two number\n");
-   var  First_Number = prompt("Enter the first number:\n");
-    var Second_Number = prompt("Enter the second number:\n");
-    var modulus = First_Number % Second_Number;
-    console.log("The subtraction of the two numbers is: ", modulus);
-}
-   
+ 
 
 
 let Select = prompt(
-    "Press 1 to add, 2 to subtract, 3 to divide, 4 to multiply or 5 for modulus :  ");
+    "Press + to add, - to subtract, / to divide, * to multiply  :  ");
 
-if (Select == "1"){
+if (Select == "+"){
     Addition();
 }
     
-else if( Select == "2"){
+else if( Select == "-"){
     Subtraction();
 }
     
-else if (Select == "3"){
+else if (Select == "/"){
      Division();
 }
    
-else if (Select == "4"){
+else if (Select == "*"){
     Multiplication();
 }
     
-else{
-     Modulus();
-}
-   
+ 
